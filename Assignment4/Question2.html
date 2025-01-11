@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/form" method="post">
+        <h1>Registration Form</h1>
+        <label for="name">Full Name</label>
+        <br>
+        <input type="text" name="name" placeholder="Enter Full Name">
+        <br>
+        <br>
+        <label for="email">Email</label>
+        <br>
+        <input type="email" name="email" placeholder="Enter your email address">
+        <br>
+        <br>
+        <label for="phone">Phone number</label>
+        <br>
+        <input type="phone" name="phone" placeholder="Enter your phone number">
+        <br>
+        <br>
+        <label for="gender">Gender</label>
+        <br>
+        <input type="radio" value="Male" name="gender">
+        <label for="Male">Male</label>
+        <br>
+        <input type="radio" value="Female" name="gender">
+        <label for="Female">Female</label>   
+        <br>
+        <br>
+        <label for="agegrp">Age Group</label>
+        <br>
+        <select name="agegrp" id="agegrp">
+            <option value="18-24">18-24</option>
+            <option value="25-34">25-34</option>
+            <option value="35-44">35-44</option>
+            <option value="45-54">45-54</option>
+            <option value="55-64">55-64</option>
+            <option value="65+">65+</option>
+        </select>
+        <br>
+        <br>
+        <label for="Interest">Interest</label>
+        <br>
+        <input type="checkbox" value="int1">
+        <label for="int1">int1</label>
+        <input type="checkbox" value="int2">
+        <label for="int2">int2</label>
+        <input type="checkbox" value="int3">
+        <label for="int3">int3</label>
+        <input type="checkbox" value="int4">
+        <label for="int4">int4</label>
+        <br>
+        <br>
+        <label for="feedback">Feedback</label>
+        <br>
+        <textarea name="feedback">Enter your Feedback</textarea>
+        <br>
+        <br>
+  
+        <button type="submit" >Register</button>
+        <br>
+
+    </form>
+</body>
+</html>

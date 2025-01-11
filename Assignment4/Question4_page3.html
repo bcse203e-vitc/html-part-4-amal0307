@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Work Experience</h1>
+    <form action="experience" method="post">
+        <label for="company">Company Name</label>
+        <br>
+        <input type="text" name="company" placeholder="Enter company name">
+        <br>
+        <br>
+        <label for="designation">Designation</label>
+        <br>
+        <input type="text" name="designation" placeholder="Enter designation">
+        <br>
+        <br>
+        <label for="duration">Duration</label>
+        <br>
+        <select name="duration" id="duration">
+            <option value="0-10">0-10</option>
+            <option value="11-20">11-20</option>
+            <option value="21-30">21-30</option>
+            <option value="30+">30+</option>
+        </select>
+        <br>
+        <br>
+        <label for="file">Resume Upload</label>
+        <br>
+        <input type="file" name="file">
+        <br>
+        <br>
+        <input type="button" value="Next" placeholder="Next">
+        <input type="button" value="Previous" placeholder="Previous">
+    </form>
+</body>
+</html>

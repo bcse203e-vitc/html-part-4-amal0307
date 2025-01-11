@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Login Form</h1>
+    <form action="/Login" method="post">
+        <label for="usernames">Username</label>
+        <br>
+        <input type="email" name="email" placeholder="Enter your email address">
+        <br>
+        <br>
+        <label for="password">Password</label>
+        <br>
+        <input type="password" name="password" placeholder="Enter your password">
+        <br>
+        <br>
+        <button type="submit">Login</button>
+        <br>
+        <a href="#forgot">Forgot Password?</a>
+        <!--Forgot password section-->
+        <h2 id="forgot">Forgot Password Form</h2>
+        <form action="/forgot" method="post">
+            <label for="forgotEmail">Email</label>
+            <br>
+            <input type="email" name="email" placeholder="Enter your email address">
+            <br>
+            <br>
+            <label for="password">New Password</label>
+            <br>
+            <input type="password" name="newpass" placeholder="Enter new password">
+            <br>
+            <br>
+            <label for="password">Confirm Password</label>
+            <br>
+            <input type="password" name="newpass" placeholder="Confirm new password">
+            <br>
+            <br>
+            <button type="submit">submit</button>            
+        </form>
+    </form>
+</body>
+</html>

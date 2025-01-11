@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Room Booking</title>
+</head>
+<body>
+    <h1>Hotel Room Booking Form</h1>
+    <form action="/submit-booking" method="post">
+        <!-- Name -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <!-- Contact Information -->
+        <label for="contact">Contact Info:</label><br>
+        <input type="text" id="contact" name="contact" required><br><br>
+        
+        <!-- Check-in Date -->
+        <label for="checkin">Check-in Date:</label><br>
+        <input type="date" id="checkin" name="checkin" required><br><br>
+        
+        <!-- Check-out Date -->
+        <label for="checkout">Check-out Date:</label><br>
+        <input type="date" id="checkout" name="checkout" required><br><br>
+        
+        <!-- Number of Guests -->
+        <label for="guests">Number of Guests:</label><br>
+        <input type="number" id="guests" name="guests" min="1" required><br><br>
+        
+        <!-- Room Type -->
+        <label for="room">Room Type:</label><br>
+        <select id="room" name="room">
+            <option value="Single">Single</option>
+            <option value="Double">Double</option>
+            <option value="Suite">Suite</option>
+        </select><br><br>
+        
+        <!-- Additional Services -->
+        <label>Additional Services:</label><br>
+        <input type="checkbox" id="breakfast" name="services" value="Breakfast">
+        <label for="breakfast">Breakfast</label><br>
+        <input type="checkbox" id="airport" name="services" value="Airport Pickup">
+        <label for="airport">Airport Pickup</label><br><br>
+        
+        <!-- Total Cost (Placeholder) -->
+        <label for="total-cost">Total Cost (Calculated):</label><br>
+        <input type="text" id="total-cost" name="total-cost" placeholder="Calculated later" readonly><br><br>
+        
+        <!-- Submit Button -->
+        <button type="submit">Book Room</button>
+    </form>
+</body>
+</html>
