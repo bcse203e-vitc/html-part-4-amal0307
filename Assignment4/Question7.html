@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking Form</title>
+</head>
+<body>
+    <h1>Travel Booking Form</h1>
+    <form action="/submit-booking" method="post">
+        <!-- Full Name -->
+        <label for="full-name">Full Name:</label><br>
+        <input type="text" id="full-name" name="full-name" required><br><br>
+        
+        <!-- Contact Information -->
+        <label for="contact">Contact Information:</label><br>
+        <input type="text" id="contact" name="contact" required><br><br>
+        
+        <!-- Destination -->
+        <label for="destination">Destination:</label><br>
+        <select id="destination" name="destination">
+            <option value="New York">New York</option>
+            <option value="Paris">Paris</option>
+            <option value="Tokyo">Tokyo</option>
+            <option value="Sydney">Sydney</option>
+        </select><br><br>
+        
+        <!-- Travel Dates -->
+        <label for="travel-dates">Travel Dates:</label><br>
+        <input type="date" id="travel-dates" name="travel-dates" required><br><br>
+        
+        <!-- Number of Travelers -->
+        <label for="travelers">Number of Travelers:</label><br>
+        <input type="number" id="travelers" name="travelers" min="1" required><br><br>
+        
+        <!-- Travel Class -->
+        <label>Travel Class:</label><br>
+        <input type="radio" id="economy" name="travel-class" value="Economy" required>
+        <label for="economy">Economy</label><br>
+        <input type="radio" id="business" name="travel-class" value="Business">
+        <label for="business">Business</label><br>
+        <input type="radio" id="first-class" name="travel-class" value="First Class">
+        <label for="first-class">First Class</label><br><br>
+        
+        <!-- Travel Insurance -->
+        <input type="checkbox" id="insurance" name="insurance" value="Yes">
+        <label for="insurance">Opt for Travel Insurance</label><br><br>
+        
+        <!-- Total Cost (Placeholder) -->
+        <label for="total-cost">Total Cost (Calculated):</label><br>
+        <input type="text" id="total-cost" name="total-cost" placeholder="Calculated later" readonly><br><br>
+        
+        <!-- Submit Button -->
+        <button type="submit">Book Now</button>
+    </form>
+</body>
+</html>

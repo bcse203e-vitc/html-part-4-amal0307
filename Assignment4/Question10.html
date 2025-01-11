@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customizable Form Template</title>
+</head>
+<body>
+    <h1>Custom Form Template</h1>
+    <form action="/submit-custom-form" method="post">
+        <!-- Form Name -->
+        <label for="form-name">Form Name:</label><br>
+        <input type="text" id="form-name" name="form-name" placeholder="Enter form name" required><br><br>
+        
+        <!-- Input Field 1 -->
+        <h3>Field 1</h3>
+        <label for="field-type-1">Field Type:</label><br>
+        <select id="field-type-1" name="field-type-1">
+            <option value="text">Text</option>
+            <option value="email">Email</option>
+            <option value="number">Number</option>
+            <option value="date">Date</option>
+        </select><br>
+        <label for="field-label-1">Field Label:</label><br>
+        <input type="text" id="field-label-1" name="field-label-1" placeholder="Enter field label"><br><br>
+        
+        <!-- Input Field 2 -->
+        <h3>Field 2</h3>
+        <label for="field-type-2">Field Type:</label><br>
+        <select id="field-type-2" name="field-type-2">
+            <option value="text">Text</option>
+            <option value="email">Email</option>
+            <option value="number">Number</option>
+            <option value="date">Date</option>
+        </select><br>
+        <label for="field-label-2">Field Label:</label><br>
+        <input type="text" id="field-label-2" name="field-label-2" placeholder="Enter field label"><br><br>
+        
+        <!-- Add more fields manually if needed -->
+        
+        <!-- Submit Button -->
+        <button type="submit">Submit Form</button>
+    </form>
+</body>
+</html>
